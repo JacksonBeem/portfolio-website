@@ -204,7 +204,7 @@ export const siteContent: SiteContent = {
         type: 'in-development',
         section: '\u00a7 2',
         title: 'Evaluating MCP Tool Servers Across Cloud Infrastructure Substrates',
-        venue: 'In development \u00b7 2026',
+        venue: 'Research Idea \u00b7 2026',
         detail:
           'Benchmarking Model Context Protocol tool servers on serverless (AWS Lambda) vs. traditional (EC2) architectures. Built a serverless MCP API using Lambda, API Gateway, and Python exposing tools to LLM agents via JSON-RPC. Implemented secure tool execution with modular service handlers and deployed via AWS SAM infrastructure-as-code.',
       },
@@ -212,10 +212,10 @@ export const siteContent: SiteContent = {
         id: 'presentation-1',
         type: 'presentation',
         section: '\u00a7 3',
-        title: 'MCP and Inversion of Control',
+        title: 'MCP and Infrastructure as Code',
         venue: 'Guest lecture \u00b7 Oakland University \u00b7 2026',
         detail:
-          'Presented on Model Context Protocol architecture and Inversion of Control patterns for agentic AI systems.',
+          'Presented on Model Context Protocol architecture and Infrastructure as Code deployment for agentic AI systems.',
       },
     ],
   },
