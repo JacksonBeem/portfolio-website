@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #0d1117;
+  --bg-surface: #161b22;
+  --bg-elevated: #1e2530;
+  --border: #30363d;
+  --text-muted: #8b949e;
+  --text-primary: #e6edf3;
+  --teal: #1d9e75;
+  --teal-light: #5dcaa5;
+  --teal-wash: rgba(29, 158, 117, 0.15);
+  --purple: #534ab7;
+  --purple-light: #afa9ec;
+  --purple-wash: rgba(83, 74, 183, 0.15);
+  --amber: #ef9f27;
+  --amber-wash: rgba(239, 159, 39, 0.15);
+  --red: #e24b4a;
+  --red-wash: rgba(226, 75, 74, 0.15);
+  color-scheme: dark;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--bg-base);
+    background-image: radial-gradient(
+      circle,
+      rgba(48, 54, 61, 0.3) 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+    color: var(--text-primary);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  section {
+    scroll-margin-top: 1.5rem;
+  }
+
+  code {
+    border-radius: 6px;
+    background: var(--bg-elevated);
+    padding: 0.15rem 0.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8em;
+  }
+
+  ::selection {
+    background: rgba(93, 202, 165, 0.25);
+    color: var(--text-primary);
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply outline-none ring-2 ring-teal ring-offset-2 ring-offset-base;
+  }
+}
