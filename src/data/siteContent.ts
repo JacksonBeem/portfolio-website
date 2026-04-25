@@ -35,6 +35,8 @@ export type Project = {
   description: string
   stack: string[]
   status: ProjectStatus
+  /** Optional GitHub (or other) URL — when set, the card becomes a clickable link. */
+  href?: string
 }
 
 export type StackGroup = {
@@ -232,8 +234,8 @@ export const siteContent: SiteContent = {
           'Lambda vs EC2 as MCP server hosting substrates across workload tiers.',
         stack: ['AWS SAM', 'Lambda', 'API Gateway', 'Python', 'k-means'],
         status: 'shipped',
+        href: 'https://github.com/JacksonBeem/mcp-benchmark-lambda',
       },
-      
       {
         id: 'finops-negotiator',
         name: 'Multi-Agent FinOps Negotiator',
@@ -249,6 +251,7 @@ export const siteContent: SiteContent = {
           'Nine-agent system for tech research across discovery, analysis, and output layers.',
         stack: ['LangGraph', 'Python', 'Multi-agent'],
         status: 'research',
+        href: 'https://github.com/JacksonBeem/agentic-research-assistant',
       },
     ],
   },
